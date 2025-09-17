@@ -9,18 +9,14 @@ $produtos = [
 
 
 echo "Lista de Produtos:<br><br>";
-for ($i = 0; $i < count($produtos); $i++) {
-    echo "Produto: " . $produtos[$i]['nome'] . "<br>";
-    echo "Preço: R$ " . $produtos[$i]['preco'] . "<br>";
-    echo "Qtd: " . $produtos[$i]['quantidade'] . " unidades" .  "<br><br>";
-}
+for ($i = 0; $i < count($produtos); $i++) echo "<b>Produto:</b> " . $produtos[$i]['nome'] . "<br>" .  "<b>Preço:</b> R$ " . $produtos[$i]['preco'] . "<br>" .  "<b>Qtd:</b> " . $produtos[$i]['quantidade'] . "unidades" .  "<br><br>";
 
 
-echo "Produtos com desconto de 10%:<br><br>";
+echo "<b>Produtos com desconto de 10%:</b><br><br>";
 for ($i = 0; $i < count($produtos); $i++) {
     $produtos[$i]['preco'] = $produtos[$i]['preco'] * 0.9;
-    echo "Produto: " . $produtos[$i]['nome'] . "<br>";
-    echo "Preço: R$ " . $produtos[$i]['preco'] . "<br>";
-    echo "Qtd: " . $produtos[$i]['quantidade'] . " unidades" . "<br><br>";
+    echo "<b>Produto:</b> " . $produtos[$i]['nome'] . "<br>";
+    echo "<b>Preço: </b>R$ " . $produtos[$i]['preco'] . "<br>";
+    echo "<b>Qtd:</b> " . $produtos[$i]['quantidade'] . " unidades" . "<br><br>";
 }
 ?>

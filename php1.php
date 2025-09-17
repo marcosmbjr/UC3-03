@@ -6,35 +6,35 @@ $numeros = []; // array zero com inserção via laço
 for ($i = 1; $i <= 10; $i++)$numeros[] = $i;
 
 // a) Exibir todos os números do array
-echo "a) Números do array: <br>";
+echo "<b>a) Números do array:</b> <br>";
 foreach ($numeros as $num) echo $num . " <br>";
-echo "<br>";
 
 // COM FUNÇÃO
 // $numeros = range(1, 10); // função para criar sequencia de valores
 // echo "a) Números do array: <br>";
-// foreach ($numeros as $num) {
-//     echo $num . " ";
-// }
+// foreach ($numeros as $num) echo $num . "<br> ";
 
+echo "<br> <br> <br>";
 
 // b) Calcular e exibir a soma de todos os números 
 // COM LAÇO
 $soma = 0;
 for ($i = 0; $i < count($numeros); $i++) $soma += $numeros[$i]; 
-echo "b) Soma de todos os números com laço: $soma";
-echo "<br><br>";
+echo "<b>b) Soma de todos os números com laço:</b> $soma";
+
 
 // COM FUNÇÃO
 // $soma = array_sum($numeros);      // soma os valores numéricos do array
-// echo "b) Soma de todos os números: $soma <br><br>";
+// echo "b) Soma de todos os números: $soma";
+
+echo "<br> <br> <br> <br>";
 
 
 // c) Inverter a ordem do array 
 //COM LAÇO
 $invertido = [];
 for ($i = count($numeros) - 1; $i >= 0; $i--) $invertido[] = $numeros[$i];
-echo "c) Array invertido: <br>";
+echo "<b>c) Array invertido:</b>     <br>";
 for ($i = 0; $i < count($invertido); $i++) echo $invertido[$i] . "<br> ";
 
 // COM FUNÇÃO
