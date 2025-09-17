@@ -1,11 +1,13 @@
 <?php
+
+
+// a) Exibir todos os números do array
 // Criar um array de 1 a 10 manualmente com laço
 // COM LAÇO
 // $numeros = [1, 2, 3, 4, 5, 6 , 7, 8, 9, 10]; // array manual
 $numeros = []; // array zero com inserção via laço
 for ($i = 1; $i <= 10; $i++)$numeros[] = $i;
 
-// a) Exibir todos os números do array
 echo "<b>a) Números do array:</b> <br>";
 foreach ($numeros as $num) echo $num . " <br>";
 
